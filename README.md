@@ -1,11 +1,11 @@
-DCP
-===
+Go DCP Parser
+=============
 
 Digital Cinema Package parser written in [Go](http://wwww.golang.org)
 
 For more info on DCPs, have a look on [Wikipedia](http://en.wikipedia.org/wiki/Digital_Cinema_Package)
 
-Serves as a good example of how Go's core XML parsers work.
+Serves as an example of how Go's core XML parsers work.
 
 The package includes parsers for the following DCP XML documents:
 
@@ -23,10 +23,10 @@ Parsers
 To parse a DCP, use:
 
 ```go
-dcp, err := dcp.New(os.Args[1])
+dcp, err := dcp.New(<path to root of a DCP folder>)
 ```
 
-To parse individual XML docs, use ParseXXX or ParseXXXFile:
+To parse individual XML docs, use ParseXXX() or ParseXXXFile():
 
 ```go
 cpl, error := cpl.ParseCPLFile(filepath string)
@@ -43,14 +43,14 @@ Run from the Command Line
 To run the DCP inspector from the command line use:
 
 ```bash
-go run cmd/main.go <path to a dcp root directory>
+go run cmd/main.go <path to root of a DCP folde>
 ```
 
 Support
 -------
 
 If you've found an error in this sample, please file an issue:
-https://github.com/googlesamples/dcp/issues
+https://github.com/googlesamples/dcp-parser-go/issues
 
 Patches are encouraged, and may be submitted by forking this project and
 submitting a pull request through GitHub.
