@@ -50,7 +50,7 @@ Support
 -------
 
 If you've found an error in this sample, please file an issue:
-https://github.com/google/dcp/issues
+https://github.com/googlesamples/dcp/issues
 
 Patches are encouraged, and may be submitted by forking this project and
 submitting a pull request through GitHub.
